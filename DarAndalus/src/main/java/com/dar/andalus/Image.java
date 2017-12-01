@@ -5,38 +5,23 @@
  */
 package com.dar.andalus;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 
 /**
  *
  * @author ghazi.guerriche
  */
-@Entity
-public class Room implements Serializable {
-
-    @Id
+@Entity        
+public class Image {
+   @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    @OneToMany
-    private List<Image> image;
-    @OneToMany
-    private List<Prices> prices = new ArrayList<Prices>();
-
-    public List<Prices> getPrices() {
-        return prices;
-    }
-
-    public void setPrices(List<Prices> prices) {
-        this.prices = prices;
-    }
+    private String path;
+    private int size;
 
     public Long getId() {
         return id;
@@ -54,12 +39,21 @@ public class Room implements Serializable {
         this.name = name;
     }
 
-    public List<Image> getImage() {
-        return image;
+    public String getPath() {
+        return path;
     }
 
-    public void setImage(List<Image> image) {
-        this.image = image;
+    public void setPath(String path) {
+        this.path = path;
     }
 
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+    
+    
 }

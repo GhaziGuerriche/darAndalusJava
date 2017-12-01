@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.dar.andalusService;
+package com.dar.andalusDAO;
 
-import com.dar.andalus.Slider;
+import com.dar.andalus.Site;
 import org.springframework.data.repository.CrudRepository;
 
 /**
  *
  * @author ghazi.guerriche
  */
-public interface SliderRepository extends CrudRepository<Slider, Long>{
+public interface SiteRepository extends CrudRepository<Site, Long>{
     
 }

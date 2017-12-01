@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.dar.andalusService;
+package com.dar.andalusDAO;
 
 import com.dar.andalus.Room;
 import org.springframework.data.repository.CrudRepository;

@@ -5,13 +5,10 @@
  */
 package com.dar.andalusService;
 
-import com.dar.andalus.Menu;
-import org.springframework.data.repository.CrudRepository;
-
 /**
  *
  * @author ghazi.guerriche
  */
-public interface MenuRepository extends CrudRepository<Menu, Long>{
+public class AppConfig {
     
 }
